@@ -100,7 +100,7 @@ async def analizar_captura(image_bytes: bytes) -> dict:
             headers={"Content-Type": "application/json", "x-api-key": ANTHROPIC_API_KEY,
                      "anthropic-version": "2023-06-01"},
             json={
-                "model": "claude-sonnet-4-20250514",
+               "model": "claude-sonnet-4-6",
                 "max_tokens": 500,
                 "messages": [{
                     "role": "user",
