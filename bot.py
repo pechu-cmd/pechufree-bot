@@ -92,8 +92,7 @@ def marcar_pagado_variable(row_num, fecha_pago, monto_pagado):
 def agregar_variable(vence, categoria, concepto, monto, ref="", notas=""):
     sh = get_sheet()
     ws = sh.worksheet("📦 VARIABLES")
-    ws.append_row([vence, categoria, concepto, monto, ref, "PENDIENTE", "", "", notas])
-
+ws.append_row([vence, "", categoria, concepto, monto, ref, "PENDIENTE", "", "", notas])
 # ── CLAUDE VISION ────────────────────────────────────────────────────────────
 async def analizar_captura(image_bytes: bytes) -> dict:
     b64 = base64.standard_b64encode(image_bytes).decode("utf-8")
